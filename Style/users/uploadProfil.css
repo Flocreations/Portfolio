@@ -1,0 +1,24 @@
+/* Style de l'en-tête */
+header {
+    height: 20%;
+}
+
+/* Section principale */
+main {
+    height: 70%;
+}
+
+/* Prévisualisation de l'image */
+.image-preview {
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.125em solid #ddd;
+    margin-top: 0.625em;
+    margin-bottom: 1.25em;
+    display: block; /* Pour centrer l'image */
+    margin-left: auto; 
+    margin-right: auto;
+    border: 0.25em solid #101422;
+}

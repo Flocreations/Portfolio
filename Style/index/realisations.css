@@ -1,0 +1,177 @@
+#mesréalisations{
+    background-color: white;
+    padding-bottom: 6em;
+}
+#mesrealisationstitle{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 2em;
+    margin-left: 1em;
+}
+#netfolio{
+    margin: auto;
+    margin-top:2em;
+    padding-bottom: 4em;
+    width: 90vw;
+    height: max-content;
+    background-color: rgb(21, 21, 21);
+    border-radius: 1.2em;
+}
+#casebarrenav{
+    height: 4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#folioflux{
+    color: red;
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin-left: 0.5em;
+}
+#navdroite{
+    display: flex;
+    align-items: center;
+}
+#btnLoginFolio{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    padding: 0.5em;
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+    margin-right: 1em;
+}
+#casebarrenav img{
+    width: 1.9em;
+    height: 1.9em;
+    margin-right: 0.5em;
+}
+#top3{
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 3em;
+}
+#menutop{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+}
+.numtop{
+    display: flex;
+    color: black;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+    font-size: 150px;
+    margin-left: -40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+#numvignettes1{
+    display: flex;
+    border: 2px solid rgb(253, 249, 250);
+    width: 80%;
+    margin: auto;
+    background-image: url(../../media/images/imgTest1.jpg);
+    background-size:cover;
+    border-radius: 20px;
+    
+}
+#numvignettes2{
+    display: flex;
+    border: 2px solid rgb(249, 247, 248);
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    background-image: url(../../media/images/imgTest2.jpg);
+    background-size:cover;
+    border-radius: 20px;
+}
+#numvignettes3{
+    display: flex;
+    border: 2px solid rgb(248, 247, 247);
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    background-image: url(../../media/images/imgTest3.webp);
+    background-size:cover;
+    border-radius: 20px;
+}
+.titreprojet{
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    height: 14em;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+
+    img{
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 20px;
+        border: 2px solid rgb(249, 247, 248);
+    }
+}
+
+#btn-index{
+   background-color: #fff;
+   width: fit-content;
+   display: flex;
+   border-radius: 0.5em;
+   padding: 0.5em 1em;
+   text-align: center;
+   margin: auto;
+   text-decoration: none;
+   color: black;
+}
+
+@media (min-width: 800px){
+    #menutop{
+        flex-direction: row;
+        align-items: center;
+        justify-content: baseline;
+        width: 90%;
+    }
+    #numvignettes1{
+        width: 30%;
+    }
+    #numvignettes2{
+        width: 30%;
+        margin-top: 0;
+    }
+    #numvignettes3{
+        width: 30%;
+        margin-top: 0;
+    }
+    .cards{
+        width: 33%;
+    }
+}

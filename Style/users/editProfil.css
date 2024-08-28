@@ -1,0 +1,10 @@
+header{
+    padding: 2em;
+    height: 30%;
+}
+main{
+    min-height: 60%;
+}
+footer{
+    height: 10%;
+}

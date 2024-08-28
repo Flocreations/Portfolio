@@ -1,0 +1,82 @@
+#competences{
+    background-color: #101422;
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+#competencestitle{
+    color: white;
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+#divLangages{
+    width: 90%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: auto;
+    margin-top: 2em;
+        img{
+            width: 2.5em;
+            height: 2.5em;
+        }
+}
+#divLangages2{
+    width: 90%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: auto;
+    margin-top: 2em;
+    img{
+        width: 3em;
+        height: 3em;
+    }
+}
+#divLangages3{
+    width: 90%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: auto;
+    margin-top: 2em;
+        img{
+            width: 2.5em;
+            height: 2.5em;
+        }
+}
+.imgLangages{
+    height: 100%;
+    width: auto;
+}
+.titleSectionCompetences{
+    width: fit-content;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: #fff;
+    color: #101422;
+    margin-top: 2em;
+    margin-left: 1em;
+    font-size: 1em;
+}
+
+@media (min-width: 800px){
+    #titleDivLangages{
+        margin-left: 5%;
+        margin-top: 5em;
+    }
+    #titleDivLangages2{
+        margin-left: 40%;
+    }
+    #divLangages2{
+        margin-left: 40%;
+    }
+    #titleDivLangages3{
+        margin-left: 80%;
+    }
+    #divLangages3{
+        margin-left: 80%;
+    }
+}

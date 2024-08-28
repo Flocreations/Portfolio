@@ -1,0 +1,63 @@
+.tableContainer th {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #f7f7f7;
+}
+
+.tableContainer td {
+    font-weight: normal;
+    font-size: 1em;
+}
+.tableContainer td a{
+    color: #101422;
+}
+
+.tableContainer {
+    text-align: left;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+}
+
+.tableContainer td, .tableContainer th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.tableContainer tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+/* Background-color of the even rows */
+.tableContainer tr:nth-child(even) {
+    background-color: white;
+}
+
+.tableContainer th {
+    background-color: #101422;
+}
+
+.tableContainer th:nth-child(1), .tableContainer td:nth-child(1) {
+    width: 15%; /* Colonne Pseudo */
+}
+
+.tableContainer th:nth-child(2), .tableContainer td:nth-child(2) {
+    width: 15%; /* Colonne Nom */
+}
+
+.tableContainer th:nth-child(3), .tableContainer td:nth-child(3) {
+    width: 15%; /* Colonne Prénom */
+}
+
+.tableContainer th:nth-child(4), .tableContainer td:nth-child(4) {
+    width: 35%; /* Colonne Email */
+}
+
+.tableContainer th:nth-child(5), .tableContainer td:nth-child(5) {
+    width: 20%; /* Colonne Action, réduite pour laisser de la place aux autres colonnes */
+}

@@ -1,0 +1,204 @@
+#contact {
+    background-color: #101422;
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+#monContact {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+#contact-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: auto 0;
+    border: #fefdfd 1px solid;
+    padding: 0.5em;
+    box-shadow: 10px 15px 15px rgba(248, 248, 250, 0.1);
+    background-color: #14192b;
+    border-radius: 1.2em;
+    margin-top: 4em;
+}
+
+input {
+    width: 90%;
+    height: 2em;
+    border: none;
+    background-color: white;
+    margin: auto;
+    margin-top: 2em;
+    padding-left: 0.3em;
+    color: rgb(12, 12, 12);
+    border: 1px solid white;
+    border-radius: 0.5em;
+}
+
+select {
+    background: none;
+    color: white;
+    width: 80%;
+    height: 8%;
+    border: none;
+    margin: auto;
+    margin-top: 1em;
+}
+
+select option {
+    color: black;
+}
+
+textarea {
+    width: 90%;
+    height: 5em;
+    background: white;
+    padding-left: 0.3em;
+    margin: auto;
+    margin-top: 1em;
+    border: none;
+    outline: none;
+    color: white;
+    resize: none;
+    border-radius: 0.5em;
+    color: black;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    input {
+        width: 30%;
+    }
+    label {
+        color: white;
+        font-size: 0.8em;
+    }
+}
+
+#btnEnvoyer {
+    width: 8em;
+    height: 2em;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+#btnEnvoyer:hover {
+    transform: scale(1.2);
+    background-color: aliceblue;
+}
+
+#cercleOu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 6em;
+    border: 1px white solid;
+    background-color: #232b48;
+    border-radius: 50%;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+#infoContact {
+    border: 1px solid white;
+    background: none;
+    box-shadow: 10px 15px 15px rgba(248, 248, 250, 0.1);
+    width: 80%;
+    height: fit-content;
+    color: white;
+    font-size: 1em;
+    padding-left: 1.2em;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    border-radius: 1.2em;
+    margin: auto 0;
+    
+    p {
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+}
+#form-group{
+    width: 50%;
+}
+/* Style de la checkbox */
+input[type="checkbox"] {
+    appearance: none; /* Enlève le style par défaut de la checkbox */
+    width: 1.5em;
+    height: 1.5em;
+    border: 2px solid white;
+    border-radius: 0.2em; /* Arrondi les coins */
+    margin-right: 0.5em; /* Espace entre la checkbox et le texte */
+    cursor: pointer;
+    display: inline-block;
+    background-color: #101422; /* Couleur de fond par défaut */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #232b48; /* Change la couleur lorsqu'elle est cochée */
+    border-color: #fefdfd; /* Couleur de la bordure lorsqu'elle est cochée */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✔'; /* Ajoute une coche quand l'élément est sélectionné */
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pour aligner correctement la checkbox avec le label */
+label {
+    display: flex;
+    width: auto;
+    align-items: end;
+    color: white;
+    font-size: 0.8em; /* Assure que la taille du texte est cohérente */
+    gap: 0.5em;
+}
+
+/* Optionnel : pour donner un effet au survol de la checkbox */
+input[type="checkbox"]:hover {
+    border-color: aliceblue; /* Change la couleur de bordure au survol */
+}
+@media (min-width: 800px) {
+    #contact {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2em;
+    }
+    #formulaire {
+        width: 50%;
+    }
+    #cercleOu {
+        visibility: hidden;
+    }
+    #infoContact {
+        width: 30%;
+    }
+}

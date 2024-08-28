@@ -1,0 +1,58 @@
+/* Conteneur principal pour chaque commentaire */
+.comment {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 1.25em;
+  padding: 0.9375em;
+  border-radius: 0.5em;
+  background-color: #f9f9f9;
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur pour l'avatar */
+.comment-avatar {
+  margin-right: 0.9375em; 
+  flex-shrink: 0;
+}
+
+/* Avatar image */
+.comment-avatar img {
+  width: 3.125em; 
+  height: 3.125em; 
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 0.125em solid #ddd;
+}
+
+/* Conteneur pour le contenu du commentaire */
+.comment-content {
+  flex: 1; 
+}
+
+/* Nom d'utilisateur */
+.comment-content h4 {
+  margin: 0 0 0.3125em; 
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Texte du commentaire */
+.comment-content p {
+  margin: 0 0 0.625em; 
+  font-size: 0.875em;
+  color: #555;
+}
+
+/* Date du commentaire */
+.comment-date {
+  font-size: 0.75em;
+  color: #888;
+  display: block;
+}
+#btnContainer{
+  width: max-content;
+  height: max-content;
+  padding: 5%;
+}

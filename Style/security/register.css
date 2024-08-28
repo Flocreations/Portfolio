@@ -1,0 +1,83 @@
+header{
+    height: 10%;
+}
+main{
+    min-height: 80%;
+    padding: 2em;
+}
+footer{
+    height: 10%;
+}
+.form-group{
+    width: 80%;
+    margin: 2em 0;
+}
+/* Style de la checkbox */
+input[type="checkbox"] {
+    appearance: none; /* Enlève le style par défaut de la checkbox */
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid black;
+    border-radius: 0.2em; /* Arrondi les coins */
+    margin-right: 0.5em; /* Espace entre la checkbox et le texte */
+    cursor: pointer;
+    display: inline-block;
+    background-color: white; /* Couleur de fond par défaut */
+}
+
+input[type="checkbox"]:checked {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✔'; /* Ajoute une coche quand l'élément est sélectionné */
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+/* Pour aligner correctement la checkbox avec le label */
+label {
+    display: flex;
+    width: auto;
+    align-items: end;
+    color: black;
+    font-size: 1em; 
+    gap: 0.5em;
+}
+
+/* Optionnel : pour donner un effet au survol de la checkbox */
+input[type="checkbox"]:hover {
+    border-color: aliceblue; /* Change la couleur de bordure au survol */
+}
+#successContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    background-color: rgb(114, 201, 114) ;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+}
+#errorContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    background-color: rgb(215, 135, 103) ;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+}
+@media (min-width: 800px){
+    form{
+        width: 60%;
+    }
+}

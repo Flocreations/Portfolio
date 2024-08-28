@@ -1,0 +1,152 @@
+/* Conteneur global qui contient la sidebar et le contenu */
+.wrapper {
+    display: flex;
+    height: 100vh; /* S'assure que le contenu occupe toute la hauteur sur grand écran */
+    flex-direction: row; /* Sidebar à gauche et contenu à droite sur desktop */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #101422;
+    padding: 1em;
+    width: 20%;
+    min-height: 100vh; /* Assure que la sidebar couvre toute la hauteur */
+    position: sticky;
+    top: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    padding: 1.5em;
+    overflow: auto; /* Permet de scroller dans le contenu si nécessaire */
+}
+
+/* Styles pour le texte et boutons */
+h1 {
+    width: fit-content;
+    padding: 1em;
+    margin: 0 auto 3em;
+    background-color: #101422;
+    color: #fff;
+    border-radius: 0.5em;
+}
+
+h3 {
+    color: #fff;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+ul {
+    margin-bottom: 5em;
+}
+
+li {
+    margin-bottom: 1.5em;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#btn-home, #btn-create {
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#btn-home {
+    border: 0.1em solid #fff;
+}
+
+#btn-create {
+    color: #101422;
+    border: 0.1em solid #101422;
+    margin-left: 3em;
+}
+
+#btn-home:hover, #btn-create:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#sectionCard {
+    margin-top: 3em;
+}
+button.modify-btn, button.delete-btn {
+    font-size: 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+button.delete-btn {
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+}
+button.delete-btn:hover {
+    background-color: #E34B4B;
+}
+#errorContainer{
+    height: 2em;
+    background-color: #E34B4B;
+}
+#successContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    background-color: rgb(114, 201, 114) ;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+}
+#errorContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    background-color: rgb(215, 135, 103) ;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+}
+/* Media queries */
+@media (max-width: 799px) {
+    /* Empile la sidebar et le contenu principal */
+    .wrapper {
+        flex-direction: column;
+        height: auto; /* Permet au contenu de grandir en hauteur au lieu d'être fixé */
+    }
+
+    .sidebar {
+        width: 100%; /* La sidebar prend toute la largeur sur mobile */
+        min-height: auto; /* Retire la hauteur fixe */
+        padding-bottom: 2em;
+        text-align: center;
+        position: unset;
+    }
+
+    .container {
+        width: 100%; /* Le contenu principal prend toute la largeur sous la sidebar */
+    }
+
+    /* Aligner les titres et les boutons au centre */
+    h1, h3 {
+        text-align: center;
+    }
+
+    #btn-home, #btn-create {
+        display: block;
+        width: fit-content;
+        margin: 1em auto;
+    }
+
+    
+    .tableContainer{
+        visibility: hidden;
+    }
+
+}

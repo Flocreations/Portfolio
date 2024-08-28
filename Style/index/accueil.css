@@ -1,0 +1,72 @@
+
+header{
+    background-color: #101422;
+    padding-top: 2em;
+}
+/* Style de la section #home */
+#home {
+    position: relative; /* Assure que les enfants absolus se positionnent par rapport à #home */
+    background-color: #101422;
+    height: 80vh; /* Hauteur pour l'espace disponible */
+    overflow: hidden; /* Empêche le débordement */
+    z-index: -1; /* Assure que #home est en arrière-plan */
+}
+
+/* Style du canvas */
+#canvasHeader {
+    position: absolute; /* Le canvas couvre la section #home */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Le canvas est derrière #startsentence */
+}
+
+/* Styles pour le texte au-dessus du canvas */
+#startsentence {
+    position: absolute; /* Positionne le texte en absolu par rapport à #home */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Centre le texte en utilisant les valeurs de top et left */
+    width: 60%;
+    text-align: center;
+    color: #FBFCFA;
+    font-weight: bold;
+    z-index: 2; /* Assure que le texte est au-dessus du canvas */
+}
+
+#startsentence p {
+    font-size: 4.5em; /* Taille du texte */
+}
+
+/* Style pour le titre principal */
+#h1titre {
+    color: #FBFCFA;
+    text-align: center;
+}
+
+/* Style pour la section cv */
+#cv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+    font-size: 1em;
+    background-color: #101422;
+    align-items: center;
+    gap: 1.5em;
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px) {
+    .hamburger{
+        display: none;
+    }
+    #home {
+        height: 90vh; /* Ajuste la hauteur pour les grands écrans */
+    }
+    #canvasHeader {
+        height: 90vh; /* Ajuste la hauteur du canvas */
+    }
+}
+
